@@ -30,6 +30,10 @@ Execute the following:
     `npm install google-auth-library --save`
     `npm install --save @polymer/paper-item`
     `npm install --save @polymer/paper-list`
+    `npm install --save @babel/code-frame`
+    `npm config delete _auth`
+    `npm config set @babel:registry=https://registry.npmjs.org`
+    `npm install --save @babel/core`
 
 ##### Building
 

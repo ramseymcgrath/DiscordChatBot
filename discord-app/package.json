@@ -13,6 +13,8 @@
     "test:integration": "polymer build # test that psk builds without error with the CLI"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/code-frame": "^7.0.0",
     "@polymer/app-layout": "^3.0.1",
     "@polymer/app-route": "^3.0.2",
     "@polymer/iron-flex-layout": "^3.0.1",
