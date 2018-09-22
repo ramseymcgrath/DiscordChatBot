@@ -6,9 +6,9 @@
   ],
   "extraDependencies": [
     "manifest.json",
-    "node_modules/@webcomponents/webcomponentsjs/*.js",
-    "!node_modules/@webcomponents/webcomponentsjs/gulpfile.js",
-    "node_modules/@webcomponents/webcomponentsjs/bundles/*.js",
+    "@webcomponents/webcomponentsjs/*.js",
+    "@webcomponents/webcomponentsjs/gulpfile.js",
+    "@webcomponents/webcomponentsjs/bundles/*.js",
     "app.yaml"
   ],
   "builds": [
