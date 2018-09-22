@@ -1,11 +1,8 @@
 # Clash Royal Api Frontend
 
-## The PRPL pattern, in a nutshell
+## Introduction
 
-* **Push** components required for the initial route
-* **Render** initial route ASAP
-* **Pre-cache** components for remaining routes
-* **Lazy-load** and progressively upgrade next routes on-demand
+Front end for controlling the dicord bots that will find and report war info through discord bots
 
 ### Building and running the application
 
@@ -39,6 +36,7 @@ The `npm run build` command builds your Polymer application for production, usin
 
 We make 3 builds by default
 `polymer build` Will call all 3
+
 ```
 build/
   es5-bundled/
@@ -52,7 +50,6 @@ build/
 
 Run `polymer help build` for the full list of available options and optimizations. Also, see the documentation on the [polymer.json specification](https://www.polymer-project.org/3.0/docs/tools/polymer-json) and [building your Polymer application for production](https://www.polymer-project.org/3.0/toolbox/build-for-production).
 
-
 ### Test Process
 
 This command will run [Web Component Tester](https://github.com/Polymer/web-component-tester)
@@ -62,8 +59,14 @@ against the browsers currently installed on your machine:
 
 If running Windows you will need to set the following environment variables:
 
-- LAUNCHPAD_BROWSERS
-- LAUNCHPAD_CHROME
+* LAUNCHPAD_BROWSERS
+* LAUNCHPAD_CHROME
 
 Read More here [daffl/launchpad](https://github.com/daffl/launchpad#environment-variables-impacting-local-browsers-detection)
 
+## The PRPL Pattern Basics
+
+* **Push** components required for the initial route
+* **Render** initial route ASAP
+* **Pre-cache** components for remaining routes
+* **Lazy-load** and progressively upgrade next routes on-demand
