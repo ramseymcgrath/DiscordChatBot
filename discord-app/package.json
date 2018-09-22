@@ -1,7 +1,7 @@
 {
-  "name": "polymer-starter-kit",
+  "name": "polymer-croyale-kit",
   "version": "4.0.0",
-  "description": "A starting point for Polymer apps",
+  "description": "Long Term CR API tool",
   "author": "The Polymer Authors",
   "license": "BSD-3-Clause",
   "repository": "Polymer/polymer-starter-kit",

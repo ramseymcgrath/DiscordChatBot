@@ -1,7 +1,7 @@
 {
-  "name": "My App",
-  "short_name": "My App",
-  "description": "My App description",
+  "name": "Long Term API",
+  "short_name": "Long Term API",
+  "description": "Long Term API PLayer Tracking Tool",
   "icons": [
     {
       "src": "images/manifest/icon-192x192.png",

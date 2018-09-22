@@ -1,34 +1,45 @@
 # Clash Royal Api Frontend
 
-The PRPL pattern, in a nutshell:
+## The PRPL pattern, in a nutshell
 
 * **Push** components required for the initial route
 * **Render** initial route ASAP
 * **Pre-cache** components for remaining routes
 * **Lazy-load** and progressively upgrade next routes on-demand
 
-##### Prerequisites
+### Building and running the application
 
-Install [Polymer CLI](https://github.com/Polymer/polymer-cli) using
-[npm](https://www.npmjs.com) (we assume you have pre-installed [node.js](https://nodejs.org)).
+#### To Run
 
-    npm install -g polymer-cli@next
+Build the application using the steps below, and then start a server:
 
-### Start the development server
+#### Start a local server
 
 This command serves the app at `http://127.0.0.1:8081` and provides basic URL
 routing for the app:
 
     npm start
 
-Note, the CR Api is not connected yet.
+### Build Process
 
-### Build
+#### Prerequisites to Build
+
+Install [Polymer CLI](https://github.com/Polymer/polymer-cli) using
+[npm](https://www.npmjs.com) (we assume you have pre-installed [node.js](https://nodejs.org)).
+
+    npm install -g polymer-cli@next
+
+Install the [Clash Royale API](https://thelearneer.github.io/croyale/) using [npm](https://www.npmjs.com) as well
+
+    npm install -g croyale
+
+#### Building
 
 The `npm run build` command builds your Polymer application for production, using build configuration options provided by the command line or in your project's `polymer.json` file.
 
 We make 3 builds by default
 `polymer build` Will call all 3
+
 ```
 build/
   es5-bundled/
@@ -42,8 +53,7 @@ build/
 
 Run `polymer help build` for the full list of available options and optimizations. Also, see the documentation on the [polymer.json specification](https://www.polymer-project.org/3.0/docs/tools/polymer-json) and [building your Polymer application for production](https://www.polymer-project.org/3.0/toolbox/build-for-production).
 
-
-### Run tests
+### Test Process
 
 This command will run [Web Component Tester](https://github.com/Polymer/web-component-tester)
 against the browsers currently installed on your machine:
@@ -52,8 +62,7 @@ against the browsers currently installed on your machine:
 
 If running Windows you will need to set the following environment variables:
 
-- LAUNCHPAD_BROWSERS
-- LAUNCHPAD_CHROME
+* LAUNCHPAD_BROWSERS
+* LAUNCHPAD_CHROME
 
 Read More here [daffl/launchpad](https://github.com/daffl/launchpad#environment-variables-impacting-local-browsers-detection)
-
