@@ -1,11 +1,8 @@
 # Clash Royal Api Frontend
 
-## The PRPL pattern, in a nutshell
+## Introduction
 
-* **Push** components required for the initial route
-* **Render** initial route ASAP
-* **Pre-cache** components for remaining routes
-* **Lazy-load** and progressively upgrade next routes on-demand
+Front end for controlling the dicord bots that will find and report war info through discord bots
 
 ### Building and running the application
 
@@ -66,3 +63,10 @@ If running Windows you will need to set the following environment variables:
 * LAUNCHPAD_CHROME
 
 Read More here [daffl/launchpad](https://github.com/daffl/launchpad#environment-variables-impacting-local-browsers-detection)
+
+## The PRPL Pattern Basics
+
+* **Push** components required for the initial route
+* **Render** initial route ASAP
+* **Pre-cache** components for remaining routes
+* **Lazy-load** and progressively upgrade next routes on-demand
