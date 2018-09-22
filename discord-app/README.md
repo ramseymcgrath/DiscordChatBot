@@ -29,6 +29,7 @@ Execute the following:
     `npm install firebase@5.3.0 --save`
     `npm install google-auth-library --save`
     `npm install --save @polymer/paper-item`
+    `npm install --save @polymer/paper-list`
 
 ##### Building
 

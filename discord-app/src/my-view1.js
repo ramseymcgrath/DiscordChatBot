@@ -18,16 +18,14 @@ class MyView1 extends PolymerElement {
           padding: 10px;
         }
       </style>
-      <style is="custom-style" include="paper-item-shared-styles"></style>
+      
       <div class="card">
         <div class="circle">1</div>
-        <h1>New View</h1>
-        
-
+        <h1>War Results</h1>
         <paper-listbox>
-          <button class="paper-item" role="option">Inbox</button>
-          <button class="paper-item" role="option">Starred</button>
-          <button class="paper-item" role="option">Sent mail</button>
+          <template is="dom-repeat" items="{{items_array}}">
+            <paper-item>{{item}}</paper-item>
+          </template>
         </paper-listbox>
       </div>
     `;
