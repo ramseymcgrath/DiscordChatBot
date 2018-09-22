@@ -7,7 +7,6 @@
  * Code distributed by Google as part of the polymer project is also
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
-import '@polymer/paper-checkbox/paper-checkbox.js';
 
 class MyView1 extends PolymerElement {
   static get template() {
@@ -19,12 +18,17 @@ class MyView1 extends PolymerElement {
           padding: 10px;
         }
       </style>
-  
+      <style is="custom-style" include="paper-item-shared-styles"></style>
       <div class="card">
         <div class="circle">1</div>
         <h1>New View</h1>
-        <paper-checkbox>Start bots!</paper-checkbox>
-        <p>This does nothing</p>
+        
+
+        <paper-listbox>
+          <button class="paper-item" role="option">Inbox</button>
+          <button class="paper-item" role="option">Starred</button>
+          <button class="paper-item" role="option">Sent mail</button>
+        </paper-listbox>
       </div>
     `;
   }

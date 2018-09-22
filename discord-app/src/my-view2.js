@@ -8,8 +8,26 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-console.info(
-  'Service worker disabled for development, will be generated at build time.'
-);
+class MyView2 extends PolymerElement {
+  static get template() {
+    return html`
+      <style include="shared-styles">
+        :host {
+          display: block;
 
-
+          padding: 10px;
+        }
+      </style>
+      
+      <div class="card">
+        <div class="circle">1</div>
+        <h1>War Results</h1>
+        <paper-listbox>
+          <template is="dom-repeat" items="{{player_array}}">
+            <paper-item>{{player}}</paper-item>
+          </template>
+        </paper-listbox>
+      </div>
+    `;
+  }
+}

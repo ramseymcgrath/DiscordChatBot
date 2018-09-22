@@ -10,16 +10,9 @@ Front end for controlling the dicord bots that will find and report war info thr
 
 Build the application using the steps below, and then start a server:
 
-#### Start a local server
+#### Build Process
 
-This command serves the app at `http://127.0.0.1:8081` and provides basic URL
-routing for the app:
-
-    npm start
-
-### Build Process
-
-#### Prerequisites to Build
+##### Prerequisites to Build
 
 Install [Polymer CLI](https://github.com/Polymer/polymer-cli) using
 [npm](https://www.npmjs.com) (we assume you have pre-installed [node.js](https://nodejs.org)).
@@ -30,7 +23,14 @@ Install the [Clash Royale API](https://thelearneer.github.io/croyale/) using [np
 
     npm install -g croyale
 
-#### Building
+##### Building the dev database
+
+Execute the following:
+    `npm install firebase@5.3.0 --save`
+    `npm install google-auth-library --save`
+    `npm install --save @polymer/paper-item`
+
+##### Building
 
 The `npm run build` command builds your Polymer application for production, using build configuration options provided by the command line or in your project's `polymer.json` file.
 
@@ -49,6 +49,13 @@ build/
 * `esm-bundled` is a bundled, minified build with a service worker. It uses standard ES module import/export statements for browsers that support them.
 
 Run `polymer help build` for the full list of available options and optimizations. Also, see the documentation on the [polymer.json specification](https://www.polymer-project.org/3.0/docs/tools/polymer-json) and [building your Polymer application for production](https://www.polymer-project.org/3.0/toolbox/build-for-production).
+
+#### Start a local server
+
+This command serves the app at `http://127.0.0.1:8081` and provides basic URL
+routing for the app:
+
+    npm start
 
 ### Test Process
 

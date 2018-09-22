@@ -30,7 +30,6 @@ setPassiveTouchGestures(true);
 // Set Polymer's root path to the same value we passed to our service worker
 // in `index.html`.
 setRootPath(MyAppGlobals.rootPath);
-
 class MyApp extends PolymerElement {
   static get template() {
     return html`
@@ -84,7 +83,8 @@ class MyApp extends PolymerElement {
         <app-drawer id="drawer" slot="drawer" swipe-open="[[narrow]]">
           <app-toolbar>Menu</app-toolbar>
           <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation">
-            <a name="view1" href="[[rootPath]]view1">View One</a>
+            <a name="view1" href="[[rootPath]]view1">War Results</a>
+            <a name="view2" href="[[rootPath]]view2">Player Info</a>
           </iron-selector>
         </app-drawer>
 
@@ -94,12 +94,13 @@ class MyApp extends PolymerElement {
           <app-header slot="header" condenses="" reveals="" effects="waterfall">
             <app-toolbar>
               <paper-icon-button icon="my-icons:menu" drawer-toggle=""></paper-icon-button>
-              <div main-title="">My App</div>
+              <div main-title="">Long Term Data Manager</div>
             </app-toolbar>
           </app-header>
 
           <iron-pages selected="[[page]]" attr-for-selected="name" role="main">
             <my-view1 name="view1"></my-view1>
+            <my-view1 name="view2"></my-view2>
             <my-view404 name="view404"></my-view404>
           </iron-pages>
         </app-header-layout>
@@ -152,6 +153,9 @@ class MyApp extends PolymerElement {
     switch (page) {
       case 'view1':
         import('./my-view1.js');
+        break;
+      case 'view2':
+        import('./my-view2.js');
         break;
       case 'view404':
         import('./my-view404.js');
