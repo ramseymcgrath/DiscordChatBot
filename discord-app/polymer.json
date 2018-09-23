@@ -7,7 +7,6 @@
   "extraDependencies": [
     "manifest.json",
     "@webcomponents/webcomponentsjs/*.js",
-    "@webcomponents/webcomponentsjs/gulpfile.js",
     "@webcomponents/webcomponentsjs/bundles/*.js",
     "app.yaml"
   ],
@@ -28,24 +27,6 @@
         "minify": true
       },
       "bundle": true,
-      "addServiceWorker": false
-    },
-    {
-      "name": "es6-unbundled",
-      "browserCapabilities": [
-        "es2015"
-      ],
-      "js": {
-        "minify": false,
-        "transformModulesToAmd": true
-      },
-      "css": {
-        "minify": false
-      },
-      "html": {
-        "minify": false
-      },
-      "bundle": false,
       "addServiceWorker": false
     }
   ],

@@ -22,11 +22,11 @@ class MyView1 extends PolymerElement {
       <div class="card">
         <div class="circle">1</div>
         <h1>War Results</h1>
-        <paper-listbox>
+        <ul>
           <template is="dom-repeat" items="{{items_array}}">
-            <paper-item>{{item}}</paper-item>
+            <li>{{item}}</li>
           </template>
-        </paper-listbox>
+        </ul>
       </div>
     `;
   }
